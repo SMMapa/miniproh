@@ -1,0 +1,7 @@
+To run:
+
+```
+col.py -i "C:\Users\<user>\AppData\Local\Google\Chrome\User Data\<profile name or Default>"
+```
+
+SQLECmd map can be found in /Maps/NSSECU3_BaenOnly.smap

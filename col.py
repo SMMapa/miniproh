@@ -298,8 +298,8 @@ def runSQLEC():
 
 def main():
     args = parse_arguments()
-    o = run_hindsight(args)
-    run_fit(o)
+    #o = run_hindsight(args)
+    #run_fit(o)
     runSQLEC()
 
 main()

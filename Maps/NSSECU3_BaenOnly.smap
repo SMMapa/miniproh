@@ -1,0 +1,30 @@
+Description: Fit and Hindsight Results
+Author: Sabine Mapa
+Email: sabine_mapa@dlsu.edu.ph
+Id: 39f4ec8e-f1af-4cae-943e-3f5d4eacb813
+Version: 0.01
+CSVPrefix: Chrome
+FileName: fitsight.sqlite
+IdentifyQuery: SELECT count(*) FROM sqlite_master WHERE type='table';
+IdentifyValue: 4
+Queries:
+    -
+        Name: URL Connections
+        Query: |
+                SELECT
+                url,
+                connectedUrls
+                FROM
+                urlsearch
+        BaseFileName: URLConnections
+
+    -
+        Name: Logins
+        Query: |
+                SELECT * 
+                FROM timeline
+                WHERE type LIKE 'login %'
+        BaseFileName: TimelineLogins
+
+
+# Documentation

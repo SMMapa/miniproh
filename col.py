@@ -8,6 +8,7 @@ import re
 import sys
 import time
 import pyhindsight
+import subprocess
 import sqlite3
 
 import pyhindsight
@@ -89,20 +90,24 @@ def run_fit(output):
     connInsert = sqlite3.connect(path)
     makeTable = "CREATE TABLE urlsearch (url VARCHAR(255), connectedURLs VARCHAR(255))"
     connInsert.execute(makeTable)
-    
-    
-    
+    percentage_done = 100 / len(unique_urls)
+    n = 0
+    halfway_flag = False
+    print("Beginning site URL acquisition with Fit's EntireWebsiteController module")
     for x in unique_urls:
         ewc = EntireWebsiteController()
         ewc.set_url(x[0])
-        print(x[0])
         urls = ewc.get_sitemap()
         urltuple = (str(x[0]), ','.join(urls))
-        print(urltuple)
+        n += percentage_done
+        if n >= 50 and not(halfway_flag):
+            print("Halfway there...")
+            halfway_flag = True
         insertUrls = "INSERT INTO urlsearch (url, connectedURLs) VALUES (?,?)"
         connInsert.execute(insertUrls, urltuple)
     connInsert.commit()
     connInsert.close()
+    print("Done!")
 
 
 def run_hindsight(args):
@@ -136,7 +141,7 @@ def run_hindsight(args):
 
     # Set up the AnalysisSession object, and transfer the relevant input arguments to it
     analysis_session = AnalysisSession()
-
+    print("Beginning local acquisition with Hindsight")
     # parse_arguments needs the analysis_session as an input to set things like available decrypts
     
 
@@ -281,22 +286,20 @@ def run_hindsight(args):
     write_sqlite(analysis_session)
 
     # Display and log finish time
-    print(f'\n Finish time: {str(datetime.datetime.now())[:-3]}')
+    print(f'\nFinish time: {str(datetime.datetime.now())[:-3]}')
     log.info(f'Finish time: {str(datetime.datetime.now())[:-3]}\n\n')
-    print(analysis_session.output_name)
     return analysis_session.output_name
+
+def runSQLEC():
+    csv_dir = os.getcwd().lower() + "\\csv"
+    args_s = ['SQLECmd.exe','-f',"fitsight.sqlite",'--csv',csv_dir]
+    subprocess.run(args_s)
 
 
 def main():
     args = parse_arguments()
     o = run_hindsight(args)
     run_fit(o)
-'''
-1. Run Hindsight (done)
-2. Search generated DB for common URLs.
-3. Run Fit on common URLs.
-4. Concatenate Fit and Hindsight output into one DB.
-5. Create SQLECmd mapping for final DB.
-6. Query for top 10 most frequent keywords in searches.
-'''
+    runSQLEC()
+
 main()

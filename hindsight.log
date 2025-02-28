@@ -7517,3 +7517,169 @@
 2025-02-28 13:44:08.286 | D | https://gsarchive.net:443 "GET /ruddigore/web_opera/rudd24.html/sitemap/ HTTP/1.1" 404 315
 2025-02-28 13:44:08.288 | D | Starting new HTTPS connection (1): gsarchive.net:443
 2025-02-28 13:44:08.928 | D | https://gsarchive.net:443 "GET /ruddigore/web_opera/rudd24.html HTTP/1.1" 200 3198
+2025-02-28 13:53:02.439 | I | 
+################################################################################
+##   Hindsight v2024.10 (https://github.com/obsidianforensics/hindsight)   ##
+################################################################################
+2025-02-28 13:53:02.440 | D | Options: {'input_path': 'C:\\Users\\Baen\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1', 'profile_paths': None, 'cache_path': None, 'browser_type': 'Chrome', 'available_input_types': ['Chrome', 'Brave'], 'version': [], 'display_version': None, 'output_name': 'fitsight', 'log_path': 'C:\\Users\\Baen\\Documents\\miniproh\\hindsight.log', 'no_copy': False, 'temp_dir': 'hindsight-temp', 'timezone': <UTC>, 'available_output_formats': ['sqlite', 'jsonl', 'xlsx'], 'selected_output_format': 'sqlite', 'available_decrypts': {'windows': 1, 'mac': 1, 'linux': 1}, 'selected_decrypts': None, 'parsed_artifacts': [], 'artifacts_display': None, 'artifacts_counts': {}, 'parsed_storage': [], 'parsed_extension_data': [], 'plugin_descriptions': None, 'selected_plugins': None, 'plugin_results': {}, 'hindsight_version': '2024.10', 'preferences': [], 'fatal_error': None}
+2025-02-28 13:53:02.440 | I | Starting analysis
+2025-02-28 13:53:02.440 | I | Reading files from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.442 | D | Input directory contents: ['Affiliation Database', 'Affiliation Database-journal', 'AggregationService', 'AggregationService-journal', 'AutofillStrikeDatabase', 'blob_storage', 'BrowsingTopicsSiteData', 'BrowsingTopicsSiteData-journal', 'BrowsingTopicsState', 'BudgetDatabase', 'Cache', 'ClientCertificates', 'Code Cache', 'commerce_subscription_db', 'Conversions', 'Conversions-journal', 'DawnGraphiteCache', 'DawnWebGPUCache', 'DIPS', 'discounts_db', 'Download Service', 'DownloadMetadata', 'Extension Rules', 'Extension Scripts', 'Extension State', 'Extensions', 'Favicons', 'Favicons-journal', 'Feature Engagement Tracker', 'GCM Store', 'Google Profile.ico', 'GPUCache', 'heavy_ad_intervention_opt_out.db', 'heavy_ad_intervention_opt_out.db-journal', 'History', 'History-journal', 'IndexedDB', 'JumpListIconsMostVisited', 'JumpListIconsRecentClosed', 'Local Extension Settings', 'Local Storage', 'LOCK', 'LOG', 'Login Data', 'Login Data For Account', 'Login Data For Account-journal', 'Login Data-journal', 'MediaDeviceSalts', 'MediaDeviceSalts-journal', 'Network', 'Network Action Predictor', 'Network Action Predictor-journal', 'optimization_guide_hint_cache_store', 'parcel_tracking_db', 'PersistentOriginTrials', 'Preferences', 'PreferredApps', 'PrivateAggregation', 'PrivateAggregation-journal', 'README', 'Safe Browsing Network', 'Secure Preferences', 'Segmentation Platform', 'Service Worker', 'Session Storage', 'Sessions', 'Shared Dictionary', 'SharedStorage', 'shared_proto_db', 'Shortcuts', 'Shortcuts-journal', 'Site Characteristics Database', 'Storage', 'Sync Data', 'Top Sites', 'Top Sites-journal', 'Translate Ranker Model', 'trusted_vault.pb', 'VideoDecodeStats', 'Visited Links', 'Web Applications', 'Web Data', 'Web Data-journal', 'WebStorage']
+2025-02-28 13:53:02.442 | D | Profile paths: ['C:\\Users\\Baen\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1']
+2025-02-28 13:53:02.442 | I |  - Found 1 browser profile(s): ['C:\\Users\\Baen\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1']
+2025-02-28 13:53:02.442 | D | Supported items: ['History', 'Archived History', 'Media History', 'Web Data', 'Cookies', 'Login Data', 'Extension Cookies', 'Local Storage', 'Extensions', 'File System', 'Platform Notifications', 'Network', 'Bookmarks', 'TransportSecurity']
+2025-02-28 13:53:02.443 | I |  - Reading from History in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.452 | I |  - Reading from Login Data in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.455 | I |  - Reading from Web Data in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.462 | I |  - Reading from Cookies in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.462 | I |    - Failed; Cookies does not exist in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.462 | D | Analyzing 'History' structure
+2025-02-28 13:53:02.462 | D |  - Starting possible versions:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130]
+2025-02-28 13:53:02.462 | D |  - Finishing possible versions: [122, 123, 124, 125, 126, 127, 128, 129, 130]
+2025-02-28 13:53:02.462 | D | Analyzing 'Cookies' structure
+2025-02-28 13:53:02.462 | D |  - Starting possible versions:  [122, 123, 124, 125, 126, 127, 128, 129, 130]
+2025-02-28 13:53:02.462 | D |  - Finishing possible versions: [122, 123, 124, 125, 126, 127, 128, 129, 130]
+2025-02-28 13:53:02.462 | D | Analyzing 'Web Data' structure
+2025-02-28 13:53:02.462 | D |  - Starting possible versions:  [122, 123, 124, 125, 126, 127, 128, 129, 130]
+2025-02-28 13:53:02.462 | D |  - Finishing possible versions: [130]
+2025-02-28 13:53:02.462 | D | Analyzing 'Login Data' structure
+2025-02-28 13:53:02.462 | D |  - Starting possible versions:  [130]
+2025-02-28 13:53:02.463 | D |  - Finishing possible versions: [130]
+2025-02-28 13:53:02.463 | I | Detected Chrome version 130
+2025-02-28 13:53:02.463 | I | Found the following supported files or directories:
+2025-02-28 13:53:02.463 | I |  - Extensions
+2025-02-28 13:53:02.463 | I |  - History
+2025-02-28 13:53:02.463 | I |  - Local Storage
+2025-02-28 13:53:02.463 | I |  - Login Data
+2025-02-28 13:53:02.463 | I |  - Network
+2025-02-28 13:53:02.463 | I |  - Web Data
+2025-02-28 13:53:02.464 | I | History items from History
+2025-02-28 13:53:02.464 | I |  - Using SQL query for History items for Chrome 59
+2025-02-28 13:53:02.464 | I |  - Reading from History in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.468 | I |  - Parsed 42 items
+2025-02-28 13:53:02.468 | I | Download items from History:
+2025-02-28 13:53:02.468 | I |  - Using SQL query for Download items for Chrome v30
+2025-02-28 13:53:02.468 | I |  - Reading from History in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:02.471 | I |  - Parsed 2 items
+2025-02-28 13:53:02.471 | I | IndexedDB:
+2025-02-28 13:53:02.472 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB
+2025-02-28 13:53:02.472 | I |  - Using ccl_chromium_indexeddb v0.19
+2025-02-28 13:53:02.472 | D |  - 2 files in IndexedDB directory
+2025-02-28 13:53:02.715 | E |  - ValueError (Didn't get version tag in the header) when processing <WrappedDatabase: id=2; name=LogsDatabaseV2:Vea0e01ca||; origin=https_www.youtube.com_0@1>
+2025-02-28 13:53:02.716 | I |  - Parsed 63 items from 2 files
+2025-02-28 13:53:02.718 | I | Cache items from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Cache\Cache_Data:
+2025-02-28 13:53:02.719 | I |  - Using ccl_chromium_cache v0.21
+2025-02-28 13:53:04.136 | I |  - Parsed 1443 items
+2025-02-28 13:53:04.143 | I | Cache items from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\GPUCache:
+2025-02-28 13:53:04.144 | I |  - Using ccl_chromium_cache v0.21
+2025-02-28 13:53:04.368 | I |  - Parsed 0 items
+2025-02-28 13:53:04.371 | I | Autofill items from Web Data:
+2025-02-28 13:53:04.371 | I |  - Using SQL query for Autofill items for Chrome v35
+2025-02-28 13:53:04.371 | I |  - Reading from Web Data in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:04.375 | I |  - Parsed 1 items
+2025-02-28 13:53:04.375 | I | Local Storage:
+2025-02-28 13:53:04.375 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Local Storage
+2025-02-28 13:53:04.376 | D |  - 1 files in Local Storage directory
+2025-02-28 13:53:04.376 | D |  - Found "leveldb" directory; reading Local Storage LevelDB records
+2025-02-28 13:53:04.396 | D |  - Reading 159 Local Storage raw LevelDB records; beginning parsing
+2025-02-28 13:53:04.397 | I |  - Parsed 124 items from 0 files
+2025-02-28 13:53:04.398 | I | Session Storage:
+2025-02-28 13:53:04.398 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Session Storage
+2025-02-28 13:53:04.398 | I |  - Using ccl_chromium_sessionstorage v0.6
+2025-02-28 13:53:04.398 | D |  - 6 files in Session Storage directory
+2025-02-28 13:53:04.451 | I |  - Parsed 157 Session Storage items
+2025-02-28 13:53:04.451 | I | Extensions:
+2025-02-28 13:53:04.451 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Extensions
+2025-02-28 13:53:04.452 | D |  - 2 files in Extensions directory: ['ghbmnnjooekpmoecnnnilnnbdlolhkhi', 'nmmhkkegccagdldgiimedpiccmgmieda']
+2025-02-28 13:53:04.452 | D |  - 2 files in Extensions directory will be processed: ['ghbmnnjooekpmoecnnnilnnbdlolhkhi', 'nmmhkkegccagdldgiimedpiccmgmieda']
+2025-02-28 13:53:04.454 | I |  - Parsed 2 items
+2025-02-28 13:53:04.454 | I | Login items from Login Data:
+2025-02-28 13:53:04.454 | I |  - Using SQL query for Login items for Chrome v78
+2025-02-28 13:53:04.454 | I |  - Reading from Login Data in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:04.458 | I |  - Using SQL query for Login Stat items for Chrome v48
+2025-02-28 13:53:04.458 | I |  - Reading from Login Data in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:04.462 | I |  - Parsed 3 items
+2025-02-28 13:53:04.462 | I | Preferences:
+2025-02-28 13:53:04.462 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Preferences
+2025-02-28 13:53:04.464 | I |  - Parsed 8 items
+2025-02-28 13:53:04.506 | I | Site Characteristics:
+2025-02-28 13:53:04.506 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Site Characteristics Database
+2025-02-28 13:53:04.506 | D |  - 5 files in Site Characteristics directory: ['000003.log', 'CURRENT', 'LOCK', 'LOG', 'MANIFEST-000001']
+2025-02-28 13:53:04.544 | I |  - Parsed 8 items
+2025-02-28 13:53:04.545 | I | DIPS Popups items from DIPS:
+2025-02-28 13:53:04.545 | I |  - Using SQL query for DIPS items for Chrome v117
+2025-02-28 13:53:04.545 | I |  - Reading from DIPS in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:04.561 | I |  - Parsed 0 items
+2025-02-28 13:53:04.561 | I | DIPS items from DIPS:
+2025-02-28 13:53:04.561 | I |  - Using SQL query for DIPS items for Chrome v117
+2025-02-28 13:53:04.561 | I |  - Reading from DIPS in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1
+2025-02-28 13:53:04.566 | I |  - Parsed 24 items
+2025-02-28 13:53:04.566 | I | Extension Rules:
+2025-02-28 13:53:04.566 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Extension Rules
+2025-02-28 13:53:04.567 | I |  - Using ccl_leveldb v0.4
+2025-02-28 13:53:04.567 | D |  - 5 files in Extension Rules directory
+2025-02-28 13:53:04.569 | I |  - Parsed 0 Extension Rules items
+2025-02-28 13:53:04.569 | I | Extension Scripts:
+2025-02-28 13:53:04.569 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Extension Scripts
+2025-02-28 13:53:04.569 | I |  - Using ccl_leveldb v0.4
+2025-02-28 13:53:04.569 | D |  - 5 files in Extension Scripts directory
+2025-02-28 13:53:04.571 | I |  - Parsed 0 Extension Scripts items
+2025-02-28 13:53:04.571 | I | Extension State:
+2025-02-28 13:53:04.571 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Extension State
+2025-02-28 13:53:04.571 | I |  - Using ccl_leveldb v0.4
+2025-02-28 13:53:04.571 | D |  - 5 files in Extension State directory
+2025-02-28 13:53:04.573 | I |  - Parsed 0 Extension State items
+2025-02-28 13:53:04.573 | I | Local Extension Settings:
+2025-02-28 13:53:04.573 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Local Extension Settings
+2025-02-28 13:53:04.573 | D |  - 1 files in Local Extension Settings directory will be processed: ['ghbmnnjooekpmoecnnnilnnbdlolhkhi']
+2025-02-28 13:53:04.573 | I | Local Extension Settings:
+2025-02-28 13:53:04.573 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Local Extension Settings\ghbmnnjooekpmoecnnnilnnbdlolhkhi
+2025-02-28 13:53:04.573 | I |  - Using ccl_leveldb v0.4
+2025-02-28 13:53:04.573 | D |  - 5 files in Local Extension Settings directory
+2025-02-28 13:53:04.575 | I |  - Parsed 1 Local Extension Settings items
+2025-02-28 13:53:04.575 | I | Cookie items from Cookies:
+2025-02-28 13:53:04.575 | I |  - Using SQL query for Cookie items for Chrome v66
+2025-02-28 13:53:04.575 | I |  - Reading from Cookies in C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Network
+2025-02-28 13:53:04.772 | I |  - Parsed 156 items
+2025-02-28 13:53:04.818 | I | Transport Security (HSTS):
+2025-02-28 13:53:04.818 | I |  - Reading from C:\Users\Baen\AppData\Local\Google\Chrome\User Data\Profile 1\Network\TransportSecurity
+2025-02-28 13:53:04.819 | I |  - Parsed 33 items
+2025-02-28 13:53:04.824 | I | Deleting temporary directory hindsight-temp
+2025-02-28 13:53:04.826 | I | Plugins:
+2025-02-28 13:53:04.826 | I |  Built-in Plugins:
+2025-02-28 13:53:04.826 | D |  - Loading 'chrome_extensions'
+2025-02-28 13:53:04.827 | I |  - Running 'Chrome Extension Names' plugin
+2025-02-28 13:53:04.828 | I |  - Completed; 0 extension URLs parsed
+2025-02-28 13:53:04.828 | D |  - Loading 'generic_timestamps'
+2025-02-28 13:53:04.829 | I |  - Running 'Generic Timestamp Decoder' plugin
+2025-02-28 13:53:04.830 | I |  - Completed; 0 timestamps parsed
+2025-02-28 13:53:04.831 | D |  - Loading 'google_analytics'
+2025-02-28 13:53:04.831 | I |  - Running 'Google Analytics Cookie Parser' plugin
+2025-02-28 13:53:04.832 | I |  - Completed; 0 cookies parsed
+2025-02-28 13:53:04.832 | D |  - Loading 'google_searches'
+2025-02-28 13:53:04.833 | I |  - Running 'Google Searches' plugin
+2025-02-28 13:53:04.835 | I |  - Completed; 19 searches parsed
+2025-02-28 13:53:04.835 | D |  - Loading 'load_balancer_cookies'
+2025-02-28 13:53:04.836 | I |  - Running 'Load Balancer Cookie Decoder' plugin
+2025-02-28 13:53:04.837 | I |  - Completed; 0 cookies parsed
+2025-02-28 13:53:04.837 | D |  - Loading 'quantcast_cookies'
+2025-02-28 13:53:04.837 | I |  - Running 'Quantcast Cookie Parser' plugin
+2025-02-28 13:53:04.838 | I |  - Completed; 0 cookies parsed
+2025-02-28 13:53:04.838 | D |  - Loading 'query_string_parser'
+2025-02-28 13:53:04.839 | I |  - Running 'Query String Parser' plugin
+2025-02-28 13:53:04.861 | I |  - Completed; 603 query strings parsed
+2025-02-28 13:53:04.861 | D |  - Loading 'time_discrepancy_finder'
+2025-02-28 13:53:04.863 | I |  - Running 'Time Discrepancy Finder' plugin
+2025-02-28 13:53:04.864 | I |  - Completed; 0 differences parsed
+2025-02-28 13:53:04.864 | I |  Custom Plugins:
+2025-02-28 13:53:04.864 | I |  Found custom plugin directory C:\Users\Baen\Documents\miniproh\pyhindsight\plugins:
+2025-02-28 13:53:04.864 | D |  - Contents of plugin folder: ['chrome_extensions.py', 'generic_timestamps.py', 'google_analytics.py', 'google_searches.py', 'load_balancer_cookies.py', 'quantcast_cookies.py', 'query_string_parser.py', 'template.py_', 'time_discrepancy_finder.py', '__init__.py', '__pycache__']
+2025-02-28 13:53:04.864 | D |  - Skipping 'chrome_extensions'; a plugin with that name has run already
+2025-02-28 13:53:04.864 | D |  - Skipping 'generic_timestamps'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'google_analytics'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'google_searches'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'load_balancer_cookies'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'quantcast_cookies'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'query_string_parser'; a plugin with that name has run already
+2025-02-28 13:53:04.865 | D |  - Skipping 'time_discrepancy_finder'; a plugin with that name has run already
+2025-02-28 13:53:04.866 | I | Writing output; SQLite format selected
